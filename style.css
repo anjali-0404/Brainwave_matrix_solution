@@ -1,0 +1,98 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #333, #555);
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    transition: background 0.3s, color 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav.scrolled {
+    background: linear-gradient(90deg, #000, #222);
+}
+
+nav .logo {
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s, background 0.3s;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background: #ff6347;
+    color: #fff;
+}
+
+section {
+    padding: 100px 20px;
+    margin-top: 60px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+}
+
+#home {
+    background: linear-gradient(135deg, #f4f4f4, #498ab2);
+}
+
+#about {
+    background: linear-gradient(135deg, #e2e2e2, #8590e4);
+}
+
+#menu {
+    background: linear-gradient(135deg, #d0d0d0, #7d5ca5);
+}
+
+#contact {
+    background: linear-gradient(135deg, #bebebe, #5d2797);
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+    max-width: 800px;
+    line-height: 1.6;
+}
